@@ -1,4 +1,5 @@
 model:
+    arch: pegs
     # use lora
     use_lora: True
     # enable {perception, generation}

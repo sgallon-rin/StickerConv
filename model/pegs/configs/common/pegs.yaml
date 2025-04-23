@@ -1,13 +1,16 @@
 model:
     # llm
-    llama_pretrained_model_path_or_name: "/datas/huggingface/vicuna-7b/"
+    #llama_pretrained_model_path_or_name: "/datas/huggingface/vicuna-7b/"
+    llama_pretrained_model_path_or_name: "lmsys/vicuna-7b-v1.1"
     # vision encoder and q-former
-    blip2_pretrained_model_path_or_name: "/datas/huggingface/blip2-opt-2.7b/"
+    #blip2_pretrained_model_path_or_name: "/datas/huggingface/blip2-opt-2.7b/"
+    blip2_pretrained_model_path_or_name: "Salesforce/blip2-opt-2.7b"
     vision_precision: "fp16"
     freeze_vision_model: True
     freeze_qformer: True
     # stable diffusion
-    stable_diffusion_pretrained_model_path_or_name: "/datas/huggingface/cuteyukimix_SD1.5/diffusers/"
+    #stable_diffusion_pretrained_model_path_or_name: "/datas/huggingface/cuteyukimix_SD1.5/diffusers/"
+    stable_diffusion_pretrained_model_path_or_name: "/mnt/tsubasa/sd_checkpoints/CuteYukiMix/diffusers/"
     freeze_stable_diffusion: True
     num_clip_tokens: 77
     prompt_embeddings_dim: 768  # stable diffusion 1.5
